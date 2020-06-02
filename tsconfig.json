@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+      "experimentalDecorators": true,
+      "target": "es2016",
+      "allowJs": true,
+      "module": "esnext",
+      "lib": ["ES2016","DOM"],
+      "sourceMap": true,
+      "strict": true,
+      "jsx": "react",
+      "removeComments": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "isolatedModules": true
+  },
+  "include": ["./src", "decorator.ts"]
+}

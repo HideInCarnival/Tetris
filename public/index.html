@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯方块</title>
+</head>
+<style>
+    #root {
+        display: flex;
+        justify-content: center;
+    }
+    .game-box {
+        background-color: #000;
+        position: relative;
+    }
+    .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(192, 192, 192, .7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        z-index: 10;
+    }
+    .mask > div.content {
+        color: #f20;
+        font-size: 50px;
+    }
+    .control-box {
+        background-color: #ccc;
+    }
+    #next {
+        position: relative;
+    }
+    #controlers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding-left: 30px;
+    }
+    #controlers p {
+        margin: 0;
+    }
+    #score {
+        display: flex;
+        font-size: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div id="root">
+        <div class="game-box">
+            <div class="mask"></div>
+        </div>
+        <div class="control-box">
+            <div id="next">
+            </div>
+            <div id="controlers">
+                <p>
+                    游戏说明
+                </p>
+                <p>
+                    ⬆: 旋转
+                </p>
+                <p>
+                    ⬅: 向左移动
+                </p>
+                <p>
+                    ➡: 向右移动
+                </p>
+                <p>
+                    ⬇: 向下移动
+                </p>
+                <p>
+                    space: 开始/暂停/恢复
+                </p>
+            </div>
+            <div id="score">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="../dist/js/bundle.js"></script>
+</body>
+</html>
